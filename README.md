@@ -86,11 +86,12 @@ Este proyecto web consume la API de [RandomUser.me](https://randomuser.me/) para
    })();
 
    UserModule.displayUsers();
+
 ### 🎨 **Estilo y Diseño**
 Cada bloque de usuario tiene un diseño limpio y minimalista, con una imagen de perfil circular, el nombre destacado y los detalles del usuario claramente visibles.
 Las tarjetas están centradas y distribuidas en la pantalla con márgenes que añaden separación para mejorar la legibilidad.
 
-###🧪 **Posibles Mejoras**
+### 🧪 **Posibles Mejoras**
 Implementar paginación para cargar más usuarios dinámicamente.
 Añadir un filtro para buscar usuarios por nombre o país.
 Mejorar el estilo visual con CSS personalizado o frameworks como Bootstrap.
