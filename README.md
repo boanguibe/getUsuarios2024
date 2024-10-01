@@ -27,28 +27,26 @@ Este proyecto web consume la API de [RandomUser.me](https://randomuser.me/) para
 - **API**: Consumo de la API [RandomUser.me](https://randomuser.me/) para obtener los datos.
 
 ### 📂 **Estructura del Proyecto**
-├── index.html # Archivo HTML principal que incluye el script 
-├── script y alternativa desafioII.js # Archivo JavaScript donde está implementada la funcionalidad 
-└── README.md # Este archivo README con detalles del proyecto
+- ├── index.html # Archivo HTML principal que incluye el script 
+- ├── script y alternativa desafioII.js # Archivo JavaScript donde está implementada la funcionalidad 
+- └── README.md # Este archivo README con detalles del proyecto
 
 ### 🖥️ **Uso del Proyecto**
 
-1. **Clona el repositorio** en tu máquina local.
+1. **Clona el repositorio** en tu máquina local.**
    ```bash
    git clone https://github.com/tu-repositorio/random-user-display.git
 
-2. **Navega a la carpeta del proyecto:
+2. **Navega a la carpeta del proyecto:**
    ```bash
    cd random-user-display
-3. **Abre el archivo index.html en tu navegador de preferencia para cargar la página.
+3. **Abre el archivo index.html en tu navegador de preferencia para cargar la página.**
 
-4. **Automáticamente, verás los datos de 10 usuarios aleatorios presentados en la página.
-   ### 🖥️ **Fragmento de Código**
+4. **Automáticamente, verás los datos de 10 usuarios aleatorios presentados en la página.**
+   ### 🖥️ **Fragmento de Código - javascript**
    ```bash
-   javascript
-Copiar código
-const UserModule = (() => {
-  const getUsers = async () => {
+   const UserModule = (() => {
+     const getUsers = async () => {
     try {
       const response = await fetch('https://randomuser.me/api/?results=10');
       const data = await response.json();
@@ -57,9 +55,9 @@ const UserModule = (() => {
       console.log('Hay un error', error);
       return [];
     }
-  };
+     };
 
-  const displayUsers = async () => {
+     const displayUsers = async () => {
     const users = await getUsers();
     const contenedor = document.getElementById('user-data');
 
@@ -80,20 +78,22 @@ const UserModule = (() => {
       `;
       contenedor.appendChild(div);
     });
-  };
+     };
 
-  return {
+     return {
     displayUsers,
-  };
-})();
+     };
+   })();
 
-UserModule.displayUsers();
+   UserModule.displayUsers();
 ### 🎨 **Estilo y Diseño**
 Cada bloque de usuario tiene un diseño limpio y minimalista, con una imagen de perfil circular, el nombre destacado y los detalles del usuario claramente visibles.
 Las tarjetas están centradas y distribuidas en la pantalla con márgenes que añaden separación para mejorar la legibilidad.
+
 ###🧪 **Posibles Mejoras**
 Implementar paginación para cargar más usuarios dinámicamente.
 Añadir un filtro para buscar usuarios por nombre o país.
 Mejorar el estilo visual con CSS personalizado o frameworks como Bootstrap.
+
 ### 💬 **Comentarios**
 Este proyecto es una excelente introducción al uso de APIs y a la creación de aplicaciones modulares utilizando JavaScript moderno. A medida que lo desarrollas, puedes agregar más funcionalidades y mejorar la interfaz de usuario.
