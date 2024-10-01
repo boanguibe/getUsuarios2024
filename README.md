@@ -28,7 +28,7 @@ Este proyecto web consume la API de [RandomUser.me](https://randomuser.me/) para
 
 ### 📂 **Estructura del Proyecto**
 - ├── index.html # Archivo HTML principal que incluye el script 
-- ├── script y alternativa desafioII.js # Archivo JavaScript donde está implementada la funcionalidad 
+- ├── script y alternativa script2.js # Archivo JavaScript donde está implementada la funcionalidad 
 - └── README.md # Este archivo README con detalles del proyecto
 
 ### 🖥️ **Uso del Proyecto**
